@@ -1,12 +1,14 @@
 import { configureStore } from "@reduxjs/toolkit";
-import loginReducer from "./slices/authSlice"; // Adjust the import path as necessary
-import campaignReducer from "./slices/campaignSlice"; // Adjust the import path as necessary
-// ...other imports...
+import campaignReducer from "./slices/campaignSlice";
+import loginReducer from "./slices/authSlice";
+import userReducer from "./slices/userProfileSlice";
+import campaignDetailReducer from "./slices/campaignDetailSlice";
 
-export default configureStore({
+export const store = configureStore({
   reducer: {
+    campaign: campaignReducer,
     auth: loginReducer,
-    campaign: campaignReducer, // Assuming you have a campaignReducer
-    // ...other reducers...
+    user: userReducer,
+    campaignDetail: campaignDetailReducer,
   },
 });
