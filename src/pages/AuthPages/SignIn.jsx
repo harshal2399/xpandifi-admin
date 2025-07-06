@@ -58,9 +58,9 @@ const SignIn = () => {
         <div className="w-full max-w-md bg-white shadow-lg rounded-xl p-8 relative">
           {/* Mascot Image */}
           <img
-            src="/images/auth/mascot.png"
+            src="/images/auth/head.svg"
             alt="Mascot"
-            className="absolute -top-16 left-1/2 transform -translate-x-1/2 w-24 h-24 object-contain"
+            className="absolute -top-28 left-1/2 transform -translate-x-1/2 w-50 h-35 object-contain"
           />
 
           <h2 className="text-2xl font-semibold text-center mt-12">Welcome</h2>
@@ -123,6 +123,11 @@ const SignIn = () => {
               </a>
             </div>
           </form>
+           <img
+            src="/images/auth/tail.svg"
+            alt="Mascot"
+            className="absolute top-100 left-1/2 transform -translate-x-1/2 w-24 h-24 object-contain"
+          />
         </div>
       </div>
     </div>
